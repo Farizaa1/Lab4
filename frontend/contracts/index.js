@@ -1,10 +1,5 @@
-export const CONTRACT_ADDRESS = "0xd9145CCE52D386f254917e481eB44e9943F39138";
+export const CONTRACT_ADDRESS = "0xf8e81D47203A594245E36C48e151709F0C19fBe8";
 export const ABI = [
-	{
-		"inputs": [],
-		"stateMutability": "payable",
-		"type": "constructor"
-	},
 	{
 		"inputs": [
 			{
@@ -17,6 +12,24 @@ export const ABI = [
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "numDays",
+				"type": "uint256"
+			}
+		],
+		"name": "stackEther",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "payable",
+		"type": "constructor"
 	},
 	{
 		"inputs": [],
@@ -251,19 +264,6 @@ export const ABI = [
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "numDays",
-				"type": "uint256"
-			}
-		],
-		"name": "stackEther",
-		"outputs": [],
-		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
